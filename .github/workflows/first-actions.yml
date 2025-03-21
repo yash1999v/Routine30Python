@@ -24,4 +24,4 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m pytest 'bubble sort.py'
+        python -m pytest 'add.py'
