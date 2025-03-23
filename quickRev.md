@@ -1,5 +1,5 @@
 # Quick revision and tips for python
-** NoneType: Represents the None object, which is used to indicate the absence of a value or a null value.
+** NoneType: Represents the None object, which is used to indicate the absence of a value or a null value. **
 ** bytes: Represents immutable sequences of bytes. Example: data = b'Hello'
 ** bytearray: Represents mutable sequences of bytes. Example: data = bytearray(b'Hello')
 
