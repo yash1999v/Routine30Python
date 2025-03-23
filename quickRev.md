@@ -31,3 +31,32 @@ def string_operations(text):
 input_text = "Hello, welcome to Python!"
 string_operations(input_text)
 ```
+## modules -- OS, re,sys
+- ex 1:
+    ```
+    import os,sys,re
+
+ **Get the value of an environment variable**
+db_user = os.getenv("DB_USER")
+db_password = os.getenv("DB_PASSWORD", "default_pass")  # Default value if not set
+print(f"Database User: {db_user}")
+print(f"Database Password: {db_password}")
+<!-- export DB_USER="admin"
+export DB_PASSWORD="secure123"
+python script.py --> 
+# Print all arguments
+print("Arguments:", sys.argv)
+# Access individual arguments
+if len(sys.argv) > 1:
+    print("First argument:", sys.argv[1])  # First argument after script name
+<!-- python script.py Hello World -->
+    ```
+## While loop for job status check 
+```
+while true; do
+    if ! check_service_health; then
+        restart_service
+    fi
+    sleep 30
+done
+```
