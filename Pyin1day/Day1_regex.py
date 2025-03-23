@@ -1,7 +1,7 @@
-import re
-pattern=r"rain"
-text ="rain rain rain"
-
-match = re.findall(pattern,text)
-if match:
-    print("match found -->" ,match.span())
+for i in range(10):
+    if i==3:
+        break
+    
+    elif i==9:
+        continue
+    print(i)
