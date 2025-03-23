@@ -60,3 +60,4 @@ while true; do
     sleep 30
 done
 ```
+## OS.listdir --> will get the list of directories in list 
