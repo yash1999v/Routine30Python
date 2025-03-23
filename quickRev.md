@@ -42,6 +42,8 @@ print(f"Database Password: {db_password}")
 <!-- export DB_USER="admin"
 export DB_PASSWORD="secure123"
 python script.py --> 
+```
+```
 <!-- # Print all arguments -->
 print("Arguments:", sys.argv)
 <!-- # Access individual arguments -->
