@@ -36,7 +36,7 @@ string_operations(input_text)
     ```
     import os,sys,re
 
- **Get the value of an environment variable**
+ <!-- **Get the value of an environment variable** -->
 db_user = os.getenv("DB_USER")
 db_password = os.getenv("DB_PASSWORD", "default_pass")  # Default value if not set
 print(f"Database User: {db_user}")
@@ -44,9 +44,9 @@ print(f"Database Password: {db_password}")
 <!-- export DB_USER="admin"
 export DB_PASSWORD="secure123"
 python script.py --> 
-# Print all arguments
+<!-- # Print all arguments -->
 print("Arguments:", sys.argv)
-# Access individual arguments
+<!-- # Access individual arguments -->
 if len(sys.argv) > 1:
     print("First argument:", sys.argv[1])  # First argument after script name
 <!-- python script.py Hello World -->
