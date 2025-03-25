@@ -1,9 +1,10 @@
 import boto3
+import json
 from datetime import datetime, timedelta, timezone
 
 # AWS region
 AWS_REGION = "us-east-1"  # Change this to your region
-SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:123456789012:StaleSnapshotAlerts"  # Replace with your SNS ARN
+SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:471112607384:StaleSnapshotAlerts"  # Replace with your SNS ARN
 
 # Initialize AWS clients
 ec2 = boto3.client("ec2", region_name=AWS_REGION)
@@ -14,6 +15,14 @@ sns = boto3.client("sns", region_name=AWS_REGION)
 today = datetime.now(timezone.utc)
 three_months_ago = today - timedelta(days=90)
 six_months_ago = today - timedelta(days=180)
+
+
+
+def lambda_handler(event, context):
+    return {
+        "statusCode": 200,
+        "body": json.dumps("Hello from Lambda!")
+    }
 
 def send_sns_alert(snapshot_list):
     """Send an email alert for stale snapshots using SNS."""
@@ -100,4 +109,3 @@ def process_snapshots():
 # Run the function
 if __name__ == "__main__":
     process_snapshots()
-
