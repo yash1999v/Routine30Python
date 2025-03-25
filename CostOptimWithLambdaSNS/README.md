@@ -20,7 +20,7 @@ This project automates the cleanup of stale AWS EBS snapshots to optimize costs.
 2. Choose **AWS Service** → **Lambda**.
 3. Attach the following policies:
    - `AmazonEC2FullAccess` (for snapshot operations)
-   - `AWSCloudTrailReadOnlyAccess` (for tracking volume deletion)
+   - `AWSCloudTrail_ReadOnlyAccess` (for tracking volume deletion)
    - `AmazonSNSFullAccess` (for sending alerts)
 4. Click **Create Role** and copy the Role ARN.
 
