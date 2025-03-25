@@ -41,7 +41,7 @@ This project automates the cleanup of stale AWS EBS snapshots to optimize costs.
 
 ### 4️⃣ Upload the Python Script
 1. Navigate to the **Code** tab in Lambda.
-2. Delete existing code and paste the [script](CostOpt.py).
+2. Delete existing code and paste the [script](lambda_function.py).
 3. Click **Deploy**.
 
 ### 5️⃣ Add Environment Variables
